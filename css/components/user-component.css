@@ -44,6 +44,12 @@
     margin-top: 8px;
     color: rgba(0, 0, 0, 0.5);
     font-size: 17px;
+    display: flex;
+}
+
+.user-component__subtitle i {
+    margin-left: 5px;
+    color: #FE5E4C;
 }
 
 .user-component__time {
