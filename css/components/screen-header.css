@@ -17,3 +17,21 @@
     margin-left: 25px;
     position: relative;
 }
+
+@keyframes rotateCog {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(180deg);
+    }
+}
+
+.screen-header .fa-gear {
+    animation: rotateCog 1s ease-in-out;
+    transition: transform 2s ease-in-out;
+}
+
+.screen-header .fa-gear:hover {
+    transform: rotateZ(360deg);
+}

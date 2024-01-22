@@ -103,6 +103,26 @@
     right: 5px;
 }
 
+@keyframes heartBeat {
+    0% {
+        color: white;
+        transform: none;
+    }
+    50% {
+        color: tomato;
+        transform: scale(1.5);
+    }
+    100% {
+        color: white;
+        transform: none;
+    }
+}
+
+.open-post__heart-count:hover i {
+    will-change: transform;
+    animation: heartBeat 0.8s ease-in-out infinite;
+}
+
 .open-post__heart-count i {
     margin-right: 5px;
 }
